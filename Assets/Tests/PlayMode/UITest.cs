@@ -19,7 +19,7 @@ public class UITest
     //2. Start a game as host
     //3. Player spawned
     [UnityTest]
-    public IEnumerator UITestWithEnumeratorPasses()
+    public IEnumerator startMatchTest()
     {
         //1.
         var playButtonObject = GameObject.Find("Play Button");
@@ -40,5 +40,52 @@ public class UITest
         //3.
         var player = GameObject.Find("Player [connId=0]");
         Assert.IsNotNull(player);
+    }
+
+    //Menu scene UI Test Scenario
+    //1. Click settings button
+    //2. Check if settings displayed
+    //3. Click on music and sfx button twice
+    //4. Close settings tab
+    //5. Click credits button
+    //6. Check if credits displayed
+    //7. Close credits
+    [UnityTest]
+    public IEnumerator menuUITest()
+    {
+        //1.
+        var settingButtonObject = GameObject.Find("Setting Button");
+        var settingButton = settingButtonObject.GetComponent<Button>();
+        settingButton.onClick.Invoke();
+
+        //2.
+        var settingPanel = GameObject.Find("Settings");
+        Assert.NotNull(settingPanel);
+
+        //3.
+        var sfxButtonObject = GameObject.Find("SFX Button");
+        var sfxButton = sfxButtonObject.GetComponent<Button>();
+        sfxButton.onClick.Invoke();
+        sfxButton.onClick.Invoke();
+        var musicButtonObject = GameObject.Find("Music Button");
+        var musicButton = musicButtonObject.GetComponent<Button>();
+        musicButton.onClick.Invoke();
+        musicButton.onClick.Invoke();
+
+        //4.
+        settingButton.onClick.Invoke();
+
+        //5.
+        var creditButtonObject = GameObject.Find("Credits Button");
+        var creditButton = creditButtonObject.GetComponent<Button>();
+        creditButton.onClick.Invoke();
+
+        //6.
+        var creditsPanel = GameObject.Find("Credits");
+        Assert.NotNull(creditsPanel);
+
+        //7.
+        creditButton.onClick.Invoke();
+        yield return null;
     }
 }
