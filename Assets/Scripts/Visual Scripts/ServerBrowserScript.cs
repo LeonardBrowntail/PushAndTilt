@@ -136,7 +136,7 @@ public class ServerBrowserScript : MonoBehaviour
 
     public void UI_DirectConnect()
     {
-        var address = GameObject.FindGameObjectWithTag("directConnectInputField").GetComponent<TMP_InputField>().text;
+        var address = "20.124.130.179";
         IPAddress ip;
         if (IPAddress.TryParse(address, out ip))
         {

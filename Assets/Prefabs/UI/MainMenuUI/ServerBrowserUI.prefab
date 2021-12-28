@@ -906,7 +906,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2595540131109739604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4040,7 +4040,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2485398447307697205}
         m_TargetAssemblyTypeName: ServerBrowserScript, Assembly-CSharp
-        m_MethodName: UI_ShowDirectConnect
+        m_MethodName: UI_DirectConnect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
