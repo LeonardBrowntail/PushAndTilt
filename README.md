@@ -10,12 +10,15 @@ iScream is a multiplayer platformer game where you play your favorite sweets esc
 4. Enjoy!
 
 - LAN
+Host
 1. Make sure you and your friends are connected to the same network
 2. Input player name and host name
 3. Choose start game
-4. Room will be shown on server browser
-5. Choose connect
-6. Enjoy!
+Client
+1. Input player name
+2. Room will be shown on server browser
+3. Choose connect
+4. Enjoy!
 
 # Game Rules
 1. 5 Players in the match
