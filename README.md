@@ -3,9 +3,19 @@
 iScream is a multiplayer platformer game where you play your favorite sweets escaping the evil factory!
 <br> Find out more in our GDD : https://www.notion.so/iScream-28f8f7d1ab7d4ff5817c1ced800ffa21
 # How To Play
+- Online
 1. Enter your name
-2. Press ready and wait for others to ready
-3. Enjoy!
+2. Choose direct connect
+3. Press ready and wait for others to ready
+4. Enjoy!
+
+- LAN
+1. Make sure you and your friends are connected to the same network
+2. Input player name and host name
+3. Choose start game
+4. Room will be shown on server browser
+5. Choose connect
+6. Enjoy!
 
 # Game Rules
 1. 5 Players in the match
